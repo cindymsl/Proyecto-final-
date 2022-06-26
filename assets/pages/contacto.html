@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/3d0fe1ace8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <title>es construcciones - contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="labelBoton">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="a" class="imagenLogo">
+                <img src="../images/logo cuadrado_Mesa de trabajo 1.png" alt="No se puede cargar la imagen" class="logo">
+            </a>       
+                <ul>
+                    <li> 
+                        <a href="../../index.html">Inicio</a>
+                    </li>
+                    <li> 
+                        <a href="./nuestraempresa.html">Nuestra Empresa</a> 
+                    </li>
+                    <li> 
+                        <a href="./servicios.html">Servicios</a> 
+                    </li>
+                    <li>
+                        <a href="./portfolio.html">Portfolio</a> 
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contacto</a> 
+                    </li>
+                </ul>
+            </nav> 
+    </header>
+        <main class="mainConctacto">
+            <section class="estiloContacto">
+                <h1>CONTACTANOS Y MATERIALIZA TUS IDEAS</h1>
+                    <article class="formularioDistribucion">
+                        <form action="form.php" method="post" target="_blank">
+                            <fieldset>
+                                <legend class="mensajeCentrado">Envianos un mensaje</legend>
+                                <legend>Datos Personales</legend>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text"id="nombre" name="nombre"autofocus required/><br>
+                                <label for="apellido">Apellido:</label> 
+                                <input type="text" id="apellido" name="apellido"autofocus required><br>
+                                <label for="email">e-mail:</label>
+                                <input type="email" id="email" name="email"placeholder="dominio@gmail.com" required pattern="@gmail.com"/><br>
+                                <label for="message">Tu Consulta</label>
+                                <textarea name="consulta id="consulta" cols="30" rows="10"></textarea>
+
+                                <div><p>¿Desea recibir notificaciones?</p>
+                                    <div> si
+                                        <input type="radio" name="notificaciones" value="si">
+                                    </div>
+                                    <div> no
+                                        <input type="radio" name="notificaciones" value="no">
+                                    </div>
+                                </div>
+                                
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Reset">
+                            </fieldset>
+                        </form>
+                    </article>
+                    <imagen><img src="../images/contacto.jpg" width="500px" alt="No se puede mostrar la imagen"></imagen>
+                </section>
+        </main>
+    </form>
+    
+    <footer>
+        <p>Copyright © Es Construcciones Todos los derechos reservados</p>
+        <p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </p>
+    </footer>
+</body>
