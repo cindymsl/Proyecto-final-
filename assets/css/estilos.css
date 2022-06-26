@@ -115,6 +115,10 @@ footer p {
     padding: 5px;
     text-align: justify;
 }
+.empresa-1 h2:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
 
 
 
