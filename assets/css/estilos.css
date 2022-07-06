@@ -282,9 +282,3 @@ footer{
         font-size: 3.5rem;
         }
 }
-
-@media (max-width: 1700px) {
-.empresa-0 {
-    margin: 40px 300px;
-}
-}
