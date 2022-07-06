@@ -69,12 +69,14 @@ h2 {
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 1.8rem;
+    color: #205375;
 }
 
 h3 {
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 2rem;
+    color: #205375;
 }
 
 p {
@@ -82,7 +84,6 @@ p {
     font-size: 1.1rem;
     color: #205375;
 }
-
 
 
 .h2_center {
@@ -129,8 +130,7 @@ line-height: 1.2;
     font-weight: 800;
     font-size: 2rem;
 }
-
-/*------NOSOTROS --------*/
+/*-----NUESTRAEMPRESA-----*/
 
 .img-Nosotros {
     background: url(../images/quehacemos.jpg);
@@ -271,21 +271,20 @@ line-height: 1.2;
     margin-bottom: 20px;
 }
 
+/* Footer */
+footer{
+    background: #002f47;
+    color: white;
+}
 
-    /*-----FOOTER-------*/
+@media (max-width: 768px) {
+    .img-Nosotros h1 {
+        font-size: 3.5rem;
+        }
+}
 
-    footer {
-        background-color: #e7cf97;
-        display: flex;
-        justify-content: space-between;
-        height: 60px;
-        align-items: center;
-        align-content: center;
-    }
-    footer p {
-        font-family: "Montserrat";
-        font-size: 1.5em;
-        color: #002f47;
-        font-weight: bold;
-        
-    }
+@media (max-width: 1700px) {
+.empresa-0 {
+    margin: 40px 300px;
+}
+}
