@@ -1,0 +1,10 @@
+.btn-lg {
+    background-color: $colorPrincipal;
+    font-family: $fontTitle;
+    color: $colorWhite;
+    font-size: $subtitleSize;
+}
+
+.btn-lg:hover {
+    background-color: $colorLight;
+}

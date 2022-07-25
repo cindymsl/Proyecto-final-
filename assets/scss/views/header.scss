@@ -1,0 +1,30 @@
+.bg_nav-oscuro {
+    background-color: $colorPrincipal;
+}
+
+.nav-link {
+    text-align: center;
+    font-family: $fontTitle;
+    font-size: $fontSubtitle;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link   {
+    color: $colorLight;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: $colorSecundario;
+}
+
+.navbar-toggler {
+    background-color: $colorPrincipal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0.3rem;
+}
+
+.navColor {
+    color: $colorLight;
+}

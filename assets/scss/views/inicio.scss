@@ -1,0 +1,20 @@
+// 
+.textTitle {
+color:$colorWhite;
+font-family: $fontTitle;
+text-align: center;
+font-size: $fontSize;
+clear: left;
+top: 50rem;
+left: 0;
+right: 0;
+position: absolute;
+text-shadow: 2px 2px 4px $colorStrong;
+margin-bottom: 0.4rem;
+font-weight: $textBold;
+line-height: 1.2;
+} 
+
+.titlePages{
+    @include margin();
+}

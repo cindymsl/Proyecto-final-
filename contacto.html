@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Es construcciones es una empresa con mas de 15 años de experiencia que se caracteriza por su compromiso, innovacion y confianza, apuntando a brindar un servicio de la mejor calidad">
+    <meta name="keywords" content="construccion, empresa, constructora, obras, proyectos, electricidad, sanitaria, calidad, materiales, casa, hogar, edificio">
+    <!--BOOTSTRAP-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <script src="assets/js/jquery.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--AOS - FONTAWESOME - FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/3d0fe1ace8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <title>Home - Es Construcciones</title>
@@ -18,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg_nav-oscuro">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/LOGO_Mesa de trabajo 1.png" width="80px" height="60px" alt="Logo EsConstrucciones">
+                <img src="assets/images/LOGO_Mesa de trabajo 1.png" width="90px" height="70px" alt="Logo EsConstrucciones">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,54 +52,101 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="img-Contacto">
-            <h1>CONTACTANOS Y CONRETA TU PROYECTO</h1>
-        </div>
-    </main>
-                    <article class="formularioDistribucion">
-                        <form action="form.php" method="post" target="_blank" >
-                            <fieldset class="formularioDistribucion">
-                                <legend class="mensajeCentrado">Envianos un mensaje</legend>
-                                <legend>Datos Personales</legend>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text"id="nombre" name="nombre"autofocus required/><br>
-                                <label for="apellido">Apellido:</label> 
-                                <input type="text" id="apellido" name="apellido"autofocus required><br>
-                                <label for="email">e-mail:</label>
-                                <input type="email" id="email" name="email"placeholder="dominio@gmail.com" required pattern="@gmail.com"/><br>
-                                <label for="message">Tu Consulta</label>
-                                <textarea name="consulta id="consulta" cols="30" rows="10"></textarea>
 
-                                <div><p>¿Desea recibir notificaciones?</p>
-                                    <div> si
-                                        <input type="radio" name="notificaciones" value="si">
-                                    </div>
-                                    <div> no
-                                        <input type="radio" name="notificaciones" value="no">
-                                    </div>
-                                </div>
-                                
-                                <input type="submit" value="Enviar">
-                                <input type="reset" value="Reset">
-                            </fieldset>
-                        </form>
-                    </article>
+    <main>
+
+                    <!--CONTACTO-->
+<section class="mb-4">
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contactanos y concreta tu proyecto</h2>
+
+    <p class="text-center w-responsive mx-auto mb-5"> 
+        Si desea hacernos llegar su consulta y/o sugerencias, por favor complete el formulario y a la brevedad nos pondremos en contacto con Usted.</p>
+
+    <div class="row">
+
+
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">E-mail</label>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Tu mensaje</label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn-lg btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Maldonado, Uruguay</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+598 099 891 919</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>esconstrucciones@adinet.com.uy</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</section> 
+
+</main>
     <!--FOOTER-->
-    <footer class="text-center text-lg-start text-white">
+    <footer class="text-center text-lg-start text-white fixed-bottom">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 mt-lg-5">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 mt-lg-5 d-flex align-items-center">
                     <h6 class="mb-4 font-weight-bold text-white">Copyright © Es Construcciones Todos los derechos reservados</h6>
                 </div>
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold"> <a href="./index.html" class="text-white">Inicio </a></h6>
-                    <h6 class="text-uppercase mb-4 font-weight-bold"> <a href="./nuestraempresa.html" class="text-white"> Nuestra Empresa </a></h6>
-                    <h6 class="text-uppercase mb-4 font-weight-bold"> <a href="./servicios.html" class="text-white">Servicios </a></h6>
-                    <h6 class="text-uppercase mb-4 font-weight-bold"> <a href="./portfolio.html" class="text-white">Portflio </a></h6>
-                    <h6 class="text-uppercase mb-4 font-weight-bold"> <a href="./contacto.html" class="text-white">Contacto </a></h6>
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-5">
                     <h6 class="text-uppercase mb-4 font-weight-bold text-white">CONCRETA TU PROYECTO</h6>
                     <p class="text-white"><i class="fa-solid fa-envelope mr-3 text-white"></i>esconstrucciones@adinet.com.uy</p>
                     <p class="text-white"><i class="fas fa-phone mr-3 text-white"></i>+598 099 891 919</p>
@@ -102,5 +155,11 @@
             </div>
         </div>
     </footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

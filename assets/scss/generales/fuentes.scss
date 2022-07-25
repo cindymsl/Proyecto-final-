@@ -1,0 +1,49 @@
+a {
+    color: $colorStrong;
+    font-family: $fontTitle;
+    text-decoration: none;
+    font-weight: $textLight;
+    text-align: center;
+    font-size: $copySize;
+    }
+
+
+
+h1 {
+    color:$colorWhite;
+    font-family: $fontTitle;
+    font-size: $fontSize;
+    text-shadow: 3px 3px 5px $colorStrong;
+}
+
+h2 {
+    font-family: $fontSubtitle;
+    font-weight: $textBold;
+    font-size: $subtitleSize;
+    color: $colorStrong;
+}
+
+h3 {
+    font-family: $fontCopy;
+    font-weight: $textLight;
+    font-size: $copySize;
+    color: $colorLight;
+}
+
+.titleServicios {
+        color: $colorPrincipal !important;
+    }
+
+.text-carousel {
+    text-shadow: 2px 2px 4px $colorSecundario;
+}
+
+
+p {
+    font-family: $fontCopy;
+    font-size: $copySize;
+    color: $colorSecundario;
+}
+h6 {
+    font-size: map-get($font-sizes, "normal");
+}
